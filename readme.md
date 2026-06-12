@@ -26,7 +26,6 @@ An advanced, fully offline **Retrieval-Augmented Generation (RAG)** system built
           │
           ▼
 [User Query] ──> [Similarity Search (k=4)] ──> [LCEL Pipeline Context Injection] ──> [gemma4:e2b LLM] ──> [Streaming Output]
-
 ```
 
 1. **Data Ingestion & Extraction:** Parses raw historical movie metadata using `pandas`.
@@ -42,25 +41,19 @@ Ensure your target execution environment satisfies the following baseline system
 1. **Python 3.10+**
 2. **[Ollama Engine](https://ollama.com/)** running actively in the background.
 3. Fetch the optimized runtime model weight file via your terminal interface:
-```bash
-ollama pull gemma4:e2b
-
-```
-
-
+   ```bash
+   ollama pull gemma4:e2b
+   ```
 
 ## 🚀 Installation & Setup
 
 **1. Clone the Source Repository:**
-
 ```bash
 git clone [https://github.com/YOUR-USERNAME/movie-rag-project.git](https://github.com/YOUR-USERNAME/movie-rag-project.git)
 cd movie-rag-project
-
 ```
 
 **2. Establish an Isolated Virtual Environment:**
-
 ```bash
 # Windows Environments
 python -m venv .venv
@@ -69,34 +62,26 @@ python -m venv .venv
 # macOS / Linux Environments
 python3 -m venv .venv
 source .venv/bin/activate
-
 ```
 
 **3. Install Core System Dependencies:**
-
 ```bash
 pip install -r requirements.txt
-
 ```
 
 **4. Dataset Placement:**
-
 * Source the tracking data sheet `wiki_movie_plots_deduped.csv` from Kaggle.
 * Stage the file directly inside the project root directory.
 
 ## 🏃‍♂️ System Execution
 
 ### Step 1: Build and Persist the Vector Index
-
 Execute the ETL initialization sequence to construct your isolated database state. This operation is idempotent and only needs to run once.
-
 ```bash
 python build_db.py
-
 ```
 
 *Expected Terminal Output Trace:*
-
 ```text
 [INFO] Initializing dataset ingestion...
 [INFO] Applied temporal filter (1995-2005). Retained X records.
@@ -105,16 +90,12 @@ python build_db.py
 [INFO] Purging stale ChromaDB state...
 [INFO] Generating embeddings for X chunks. This may take a moment...
 [SUCCESS] Vector database successfully persisted to ./chroma_db
-
 ```
 
 ### Step 2: Launch the RAG Interactive Interface
-
 Spin up the live production engine to poll incoming terminal queries against your indexed data structures.
-
 ```bash
 python app.py
-
 ```
 
 ## 📊 Evaluation & Latency Telemetry
@@ -123,11 +104,9 @@ The runtime execution engine continuously updates real-time analytics to audit p
 
 * **Inference Efficiency Optimization:** By utilizing the lightweight, high-throughput `gemma4:e2b` parameter profile, execution latency experiences a sharp reduction—yielding snappy, predictable completions even on standard CPU runtimes.
 * **Contextual Fidelity Verification:** The engine maintains absolute alignment with the bounded prompt space. When issued validation vectors containing out-of-bounds cinematic facts (e.g., querying unindexed franchise data), the pipeline successfully isolates the missing state boundaries and outputs:
-> `I cannot find the answer in the dataset.`
-
-
-This confirms strict containment and robust security against factual hallucination risks during public software demonstrations.
+  > `I cannot find the answer in the dataset.`
+  
+  This confirms strict containment and robust security against factual hallucination risks during public software demonstrations.
 
 ---
-
 *Disclaimer: This repository is an academic software demonstration. Cinematic plot records are property of their respective Wikipedia documentation contributors.*
