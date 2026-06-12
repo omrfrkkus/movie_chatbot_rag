@@ -1,0 +1,139 @@
+[INFO] Initializing embedding model and connecting to vector store...
+Loading weights: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 5820.01it/s]
+[INFO] Establishing connection to local LLM (gemma4:e2b)...
+
+==================================================
+🎬 CINEMATIC RAG ENGINE: ONLINE
+Awaiting queries. Type 'quit', 'exit', or 'q' to terminate session.
+==================================================
+
+
+[USER]: Why must Frodo Baggins leave the Shire and take the ring to Mount Doom?
+--------------------------------------------------
+
+[AI]:
+I cannot find the answer in the dataset.
+
+[METRICS] Execution Latency: 61.29s
+[SOURCES]:
+  1. The Lord of the Rings: The Fellowship of the Ring (2001)
+  2. The Lord of the Rings: The Fellowship of the Ring (2001)
+  3. The Lord of the Rings: The Return of the King (2003)
+  4. The Lord of the Rings: The Two Towers (2002)
+
+[USER]: Why does Woody get jealous of the new toy Buzz Lightyear?
+--------------------------------------------------
+
+[AI]:
+I cannot find the answer in the dataset.
+
+[METRICS] Execution Latency: 34.03s
+[SOURCES]:
+  1. Toy Story 2 (1999)
+  2. Toy Story (1995)
+  3. Toy Story (1995)
+  4. Toy Story 2 (1999)
+
+[USER]: What is the secret of the little boy, Cole Sear, in The Sixth Sense?
+--------------------------------------------------
+
+[AI]:
+Cole confides his secret to Crowe by saying, "I see dead people." He sees ghosts who walk around like the living unaware they are dead.
+
+[METRICS] Execution Latency: 22.57s
+[SOURCES]:
+  1. The Sixth Sense (1999)
+  2. The Sixth Sense (1999)
+  3. The Sixth Sense (1999)
+  4. Twelve Monkeys (1995)
+
+[USER]: What is the exact first rule of the underground fighting club started by the narrator and Tyler Durden?
+--------------------------------------------------
+
+[AI]:
+I cannot find the answer in the dataset.
+
+[METRICS] Execution Latency: 27.73s
+[SOURCES]:
+  1. Fight Club (1999)
+  2. The Boys Club (1997)
+  3. Fight Club (1999)
+  4. Sleepers (1996)
+
+[USER]: Who is the head of the Corleone crime family who refuses to deal in narcotics?
+--------------------------------------------------
+
+[AI]:
+I cannot find the answer in the dataset.
+
+[METRICS] Execution Latency: 30.79s
+[SOURCES]:
+  1. Traffic (2000)
+  2. In Too Deep (1999)
+  3. Man of the House (1995)
+  4. Gettin' Square (2003)
+
+[USER]: On which moon do humans mine the mineral unobtanium in the movie Avatar?
+--------------------------------------------------
+
+[AI]:
+I cannot find the answer in the dataset.
+
+[METRICS] Execution Latency: 27.5s
+[SOURCES]:
+  1. The Adventures of Pluto Nash (2002)
+  2. Desert Moon (2001)
+  3. The Lost Skeleton of Cadavra (2001)
+  4. The Lost Skeleton of Cadavra (2001)
+
+[USER]: What happens to Maximus after Emperor Marcus Aurelius is murdered by his son Commodus?
+--------------------------------------------------
+
+[AI]:
+After Commodus murders his father (Marcus Aurelius), Maximus buries his wife and son, then collapses. He is subsequently found by slavers who take him to the Roman province of Zucchabar, where he is sold to a gladiator trainer named Proximo.
+
+[METRICS] Execution Latency: 38.92s
+[SOURCES]:
+  1. Gladiator (2000)
+  2. Gladiator (2000)
+  3. Gladiator (2000)
+  4. Gladiator (2000)
+
+[USER]: In the movie The Matrix, what choice does Morpheus offer Neo regarding the red and blue pills?
+--------------------------------------------------
+
+[AI]:
+Morpheus offers Neo a choice between a red pill that will show him the truth about the Matrix, and a blue pill that will return him to his former life.
+
+[METRICS] Execution Latency: 25.39s
+[SOURCES]:
+  1. The Matrix (1999)
+  2. The Matrix (1999)
+  3. The Matrix (1999)
+  4. The Matrix (1999)
+
+[USER]: What is the main source of energy that the city of Monstropolis relies on?
+--------------------------------------------------
+
+[AI]:
+The city of Monstropolis is powered by energy from the screams of human children.
+
+[METRICS] Execution Latency: 24.59s
+[SOURCES]:
+  1. Monsters, Inc. (2001)
+  2. Alien vs. Predator (2004)
+  3. Godzilla vs. Megaguirus (2000)
+  4. Gamera 2: Attack of Legion (1996)
+
+[USER]: What is the main source of energy that the city of Monstropolis relies on?
+--------------------------------------------------
+
+[AI]:
+The city of Monstropolis is powered by energy from the screams of human children.
+
+[METRICS] Execution Latency: 17.29s
+[SOURCES]:
+  1. Monsters, Inc. (2001)
+  2. Alien vs. Predator (2004)
+  3. Godzilla vs. Megaguirus (2000)
+  4. Gamera 2: Attack of Legion (1996)
