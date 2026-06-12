@@ -83,10 +83,6 @@ The system tracks performance metrics during runtime. Based on our evaluations:
 * **Cold Start vs. Warm Start:** Initial queries may take longer as the LLM is loaded into memory (Cold Start). Subsequent queries experience an ~80% reduction in processing latency (Warm Start).
 * **Faithfulness Validation:** The system passes rigorous anti-hallucination tests. When asked specific trivia not present in the plot summaries (e.g., "What is the first rule of Fight Club?"), the system successfully retrieves the correct document but accurately replies: *"I cannot find the answer in the dataset,"* proving strict adherence to the RAG context.
 
-## 🤝 Team Contribution
-Built for the Final Project Deliverable (Technical Track: Local LLM + RAG).
-* **Data & Architecture Development:** Code implementation, testing, and pipeline optimization.
-* **Documentation & Presentation:** Technical report formulation and live demonstration. 
 
 ---
 *Disclaimer: This project is for educational purposes. All movie plots belong to their respective Wikipedia contributors.*
