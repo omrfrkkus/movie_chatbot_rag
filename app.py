@@ -21,7 +21,7 @@ from langchain_ollama import OllamaLLM
 # --- Configuration & Initialization ---
 DB_DIR = "./chroma_db"
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
-LLM_MODEL = "gemma4:e4b"
+LLM_MODEL = "gemma4:e2b"  # Updated to 2B model for faster inference
 OLLAMA_BASE_URL = "http://localhost:11434"
 RETRIEVER_K = 4
 
