@@ -1,10 +1,3 @@
-Here is the fully repaired and correctly formatted `README.md` file.
-
-The previous formatting broke because your markdown editor accidentally converted the code blocks (like `bash`) into plain text headers. I have fixed all the headers, restored the numbered lists, fixed the GitHub clone link, and enclosed the entire document inside a single, easy-to-copy markdown block.
-
-Simply click the **Copy** button on the block below and paste it directly into your `README.md` file in VS Code:
-
-```markdown
 # 🎬 Cinematic RAG: 100% Local Movie Assistant
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
@@ -138,7 +131,3 @@ This confirms strict containment and robust security against factual hallucinati
 ---
 
 *Disclaimer: This repository is an academic software demonstration. Cinematic plot records are property of their respective Wikipedia documentation contributors.*
-
-```
-
-```
